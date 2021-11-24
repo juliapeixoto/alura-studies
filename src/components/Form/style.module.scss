@@ -4,7 +4,6 @@
   grid-area: new-task;
   background-color: #67595e;
   border-radius: 10px;
-  box-shadow: 2px 4px 4px #0000009f;
   padding: 12px;
 
   &__input__container {
@@ -56,6 +55,7 @@
 
       label {
         font-size: 2rem;
+        margin-bottom: 15px;
       }
 
       input {

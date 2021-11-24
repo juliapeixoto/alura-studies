@@ -1,6 +1,9 @@
-import React from "react";
 import style from "./style.module.scss";
 
-export default function Button() {
-  return <button className={style.button}>Botao</button>;
+interface ButtonProps {
+  text: string;
+}
+
+export default function Button({ text }: ButtonProps) {
+  return <button className={style.button}>{text}</button>;
 }

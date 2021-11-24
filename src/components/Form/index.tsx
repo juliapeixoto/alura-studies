@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "../Button";
 import style from "./style.module.scss";
 
@@ -33,7 +32,7 @@ export default function Form() {
         />
       </div>
 
-      <Button />
+      <Button text="Adicionar" />
     </form>
   );
 }
