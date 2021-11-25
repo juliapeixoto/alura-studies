@@ -1,0 +1,33 @@
+.item__selected {
+  background-color: #dd9898;
+  color: #ffffff;
+  box-shadow: 2px 4px 4px #0000009f inset;
+
+  span {
+    color: #523a28;
+  }
+}
+
+.green {
+  span {
+    color: #dbfac4;
+  }
+}
+
+.item__completed {
+  background-color: #97b97b;
+  cursor: auto;
+
+  .item__concluded {
+    display: block;
+    background-image: url("../../../assets/img/check-mark.svg");
+    background-repeat: no-repeat;
+    background-size: 38px 38px;
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 43px;
+  }
+}

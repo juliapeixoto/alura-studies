@@ -1,24 +1,21 @@
-import { useState } from "react";
+import { ListProps } from "../../types/task";
 import Item from "./Item";
 import style from "./style.module.scss";
 
-export default function List() {
-  const [tasks, setTasks] = useState();
+interface Props {
+  tasks: ListProps[];
+  selectTask: (selectedTask: ListProps) => void;
+}
 
+export default function List({ tasks, selectTask }: Props) {
   return (
     <aside className={style.list}>
-      <h2
-      // onClick={() => {
-      //   setTasks([...tasks, "Acabate", time])
-      // }}
-      >
-        Estudos do dia
-      </h2>
+      <h2>Estudos do dia</h2>
 
       <ul>
-        {/* {tasks.map((item, index) => (
-          <Item key={index} {...item} />
-        ))} */}
+        {tasks.map((item) => (
+          <Item key={item.id} {...item} selectTask={selectTask} />
+        ))}
       </ul>
     </aside>
   );
